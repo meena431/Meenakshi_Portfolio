@@ -767,8 +767,21 @@ button:hover a {
     grid-template-columns: 1fr;
   }
 
-  .contact-left {
+  .contact-left h2, .contact-left p{
     text-align: center;
+  }
+
+  .detail-box {
+    margin-left: 12px;
+  }
+
+  .contact-right {
+    margin-left: 9px;
+    margin-bottom: 15px;
+  }
+
+  .send-btn {
+    padding: 8px 15px;
   }
 }
 
