@@ -49,76 +49,89 @@
     </div>
   </nav>
 
-  <!--------- HOME Section -------->
-
+  <!-- ========= HOME SECTION ========= -->
   <section class="container-fluid home py-5 my-lg-5" id="home">
-    <div
-      class="row d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center m-0 gap-lg-5 gap-4">
-      <!-- Left Column: Text & Socials -->
+    <div class="row d-flex flex-lg-row flex-column align-items-center justify-content-center m-0 gap-lg-5 gap-4">
+
+      <!-- Image -->
       <div
-        class="col-12 col-md-10 col-lg-5 d-flex flex-column align-items-start align-items-md-start justify-content-center py-5 gap-1">
-        <h5 class="animate__animated animate__fadeInDown animate__slow">Hi, MySelf</h5>
-        <h2 class="animate__animated animate__fadeInDown animate__slow">Meenakshi Thangadurai</h2>
-        <h3 class="animate__animated animate__fadeInDown animate__slow">
-          And I'm a <span style="color: var(--primary-color);">MERN Stack Developer</span>
-        </h3>
-        <p class="animate__animated animate__fadeInDown animate__slow">I'm a passionate MERN Stack Developer skilled in
-          building responsive, dynamic, and user-focused web
-          applications.</p>
-
-        <!-- Social Icons -->
-        <div class="social-icons d-flex gap-2 flex-wrap justify-content-start justify-content-md-start">
-          <button class="animate__animated animate__bounce animate__zoomIn"><i class="bi bi-whatsapp"></i></button>
-          <button class="animate__animated animate__bounce animate__zoomIn"><i class="bi bi-instagram"></i></button>
-          <button class="animate__animated animate__bounce animate__zoomIn"><i class="bi bi-linkedin"></i></button>
-          <button class="animate__animated animate__bounce animate__zoomIn"><i class="bi bi-facebook"></i></button>
-        </div>
-
-        <!-- Resume Button -->
-        <button class="mt-4 animate__animated animate__bounce animate__zoomIn">
-          <a href="resume .pdf" download="Meenakshi_Resume.pdf">Download Resume</a>
-        </button>
-      </div>
-
-      <!-- Right Column: Image -->
-      <div
-        class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center animate__animated animate__zoomIn">
-        <img src="images/meena.jpg" alt="Meena" class="img-fluid rounded-circle"
+        class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center order-lg-1 order-2 animate__animated animate__zoomIn animate__slow">
+        <img src="images/meena1.png" alt="Meena" class="img-fluid rounded-circle"
           style="height: 350px; width: 350px; object-fit: cover;">
       </div>
 
+      <!-- Text -->
+      <div
+        class="col-12 col-md-10 col-lg-5 d-flex flex-column align-items-start justify-content-center py-5 gap-2 order-lg-2 order-1">
+
+        <h5 class="animate__animated animate__fadeInDown animate__slow">Hi, Myself</h5>
+        <h2 class="animate__animated animate__fadeInDown animate__slow">
+          Meenakshi Thangadurai
+        </h2>
+        <h3 class="animate__animated animate__fadeInDown animate__slow">
+          And I'm a <span style="color: var(--primary-color);">MERN Stack Developer</span>
+        </h3>
+        <p class="animate__animated animate__fadeInDown animate__slow">
+          I'm a passionate MERN Stack Developer skilled in building responsive,
+          dynamic, and user-focused web applications.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="social-icons d-flex gap-2 flex-wrap">
+          <button class="animate__animated animate__zoomIn"><i class="bi bi-whatsapp"></i></button>
+          <button class="animate__animated animate__zoomIn"><i class="bi bi-instagram"></i></button>
+          <button class="animate__animated animate__zoomIn"><i class="bi bi-linkedin"></i></button>
+          <button class="animate__animated animate__zoomIn"><i class="bi bi-facebook"></i></button>
+        </div>
+
+        <!-- Resume Button -->
+        <button class="mt-4 animate__animated animate__zoomIn">
+          <a href="resume.pdf" download="Meenakshi_Resume.pdf" class="text-decoration-none text-dark">
+            Download Resume
+          </a>
+        </button>
+
+      </div>
     </div>
   </section>
 
-  <!---------- ABOUT Section ---------->
 
+
+  <!-- ========= ABOUT SECTION ========= -->
   <section class="container-fluid about py-lg-5 pb-5 my-lg-3" id="about">
-    <div class="row flex-lg-row flex-column gap-4 align-items-center justify-content-center">
-      <!--Left Column: Image -->
-      <div class="col-12 col-md-6 col-lg-4 text-center mb-4 mb-md-0">
-        <div class="img-wrap animate__animated animate__zoomIn">
-          <img src="images/meena.jpg" alt="Meenakshi - MERN Developer" class="img-fluid rounded-circle shadow"
-            style="height: 350px; width: 350px; object-fit: cover;">
-        </div>
-      </div>
+    <div class="row d-flex flex-lg-row flex-column-reverse gap-4 align-items-center justify-content-center">
 
-      <!-- Right Column: About Me -->
-      <div class="col-11 col-md-8 col-lg-5 justify-content-center">
-        <h2 class="mb-3 animate__animated animate__fadeInDown title"><span
-            style="color: var(--primary-color);">About</span> Me</h2>
-        <p class="lead mt-4 animate__animated animate__fadeInRight animate__delay-1s">
+      <!-- Text -->
+      <div class="col-11 col-md-8 col-lg-5 order-lg-1 order-2">
+
+        <h2 class="mb-3 animate__animated animate__fadeInDown title">
+          <span style="color: var(--primary-color);">About</span> Me
+        </h2>
+
+        <p class="lead mt-4 animate__animated animate__fadeInLeft animate__slow">
           I'm Meenakshi, a passionate MERN Stack Developer focused on creating responsive,
           user-friendly web applications. I love transforming ideas into digital experiences
           using MongoDB, Express, React, and Node.js.
         </p>
-        <p class="animate__animated animate__fadeInRight animate__delay-2s mt-1">
+
+        <p class="animate__animated animate__fadeInLeft animate__slow mt-2">
           My goal is to keep learning, explore new technologies, and build real-world projects
           that make an impact. Let's connect and create something amazing together!
         </p>
 
         <!-- Contact Button -->
-        <button class="mt-3 animate__animated animate__zoomIn animate__delay-3s"><a href="#contact">Contact
-            Me</a></button>
+        <button class="mt-3 animate__animated animate__zoomIn">
+          <a href="#contact" class="text-decoration-none text-dark">Contact Me</a>
+        </button>
+
+      </div>
+
+      <!-- Image -->
+      <div class="col-12 col-md-6 col-lg-4 text-center order-lg-2 order-1">
+        <div class="img-wrap glow-theme animate__animated animate__zoomIn animate__slow">
+          <img src="images/meena2.jpeg" alt="Meenakshi - MERN Developer" class="img-fluid rounded-circle"
+            style="height: 310px; width: 310px; object-fit: cover;">
+        </div>
       </div>
     </div>
   </section>
@@ -212,21 +225,25 @@
             <h5>Team Work</h5>
             <p>Works closely with the team to reach project goals.</p>
           </div>
+
           <div class="swiper-slide">
             <i class='bx bxs-message-dots'></i>
             <h5>Communication</h5>
             <p>Expresses ideas clearly and listens with focus.</p>
           </div>
+
           <div class="swiper-slide">
             <i class='bx bx-bulb'></i>
             <h5>Problem Solving</h5>
             <p>Solves coding challenges using patience and analysis.</p>
           </div>
+
           <div class="swiper-slide">
             <i class='bx bx-refresh'></i>
             <h5>Adaptability</h5>
             <p>Quickly adapts to new tools, tech, and workflows.</p>
           </div>
+
           <div class="swiper-slide">
             <i class='bx bx-target-lock'></i>
             <h5>Attention to detail</h5>
@@ -250,11 +267,12 @@
   <!------ PROJECTS Section ------->
 
   <section id="projects" class="project py-5 mb-4">
-    <h2 class="project-head title animate__animated animate__fadeInDown">My<span style="color: var(--primary-color);"> Projects</span>
+    <h2 class="project-head title animate__animated animate__fadeInDown">My<span style="color: var(--primary-color);">
+        Projects</span>
     </h2>
     <div class="container">
-
-      <div class="p-box active"  style="--i:1">
+      <!-- Project -1 -->
+      <div class="p-box active" style="--i:1">
         <img src="images/project1.jpg" alt="">
         <div class="layer">
           <h3>Portfolio Website</h3>
@@ -264,7 +282,8 @@
         </div>
       </div>
 
-      <div class="p-box"  style="--i:2">
+      <!-- Project -2 -->
+      <div class="p-box" style="--i:2">
         <img src="images/project2.jpg" alt="">
         <div class="layer layer1">
           <h3>E-Commerce Website</h3>
@@ -275,7 +294,8 @@
         </div>
       </div>
 
-      <div class="p-box"  style="--i:3">
+      <!-- Project -3 -->
+      <div class="p-box" style="--i:3">
         <img src="images/project3.jpg" alt="">
         <div class="layer">
           <h3>E-Commerce Website</h3>
@@ -284,6 +304,7 @@
           <a href="https://elora-rust.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -292,16 +313,17 @@
   <section class="contact-section" id="contact">
     <div class="contact-container">
 
-      <!-- Contact: Left -->
+      <!-- Contact: Details -->
       <div class="contact-left reveal">
-        <h2 class="title animate__animated animate__fadeInDown"><span style="color: var(--primary-color);">Contact</span> Me</h2>
+        <h2 class="title animate__animated animate__fadeInDown"><span
+            style="color: var(--primary-color);">Contact</span> Me</h2>
         <p>If you're hiring for a developer role, I'd be glad to connect and explore the opportunity.</p>
 
         <div class="detail-box">
           <i class='bx bxs-envelope'></i>
           <div>
             <h4>Email</h4>
-            <p>yourmail@gmail.com</p>
+            <p>meenakshithangadurai07@gmail.com</p>
           </div>
         </div>
 
@@ -309,7 +331,7 @@
           <i class='bx bxs-phone'></i>
           <div>
             <h4>Phone</h4>
-            <p>+91 98765 43210</p>
+            <p>+91 74188 10693</p>
           </div>
         </div>
 
@@ -317,12 +339,12 @@
           <i class='bx bxs-map'></i>
           <div>
             <h4>Location</h4>
-            <p>Tamil Nadu, India</p>
+            <p>Dindigul, Tamil Nadu</p>
           </div>
         </div>
       </div>
 
-      <!-- Contact: Right -->
+      <!-- Contact: Message Box -->
       <form class="contact-right reveal" id="contactForm">
         <h3 class="title  animate__animated animate__fadeInDown">Send a Message</h3>
 
@@ -341,7 +363,7 @@
           <label>Your Message</label>
         </div>
 
-        <button class="send-btn" type="submit">Submit</button>
+        <button class="send-btn" type="submit"><a href="">Submit</a></button>
       </form>
 
     </div>
@@ -350,9 +372,10 @@
 
   <!-- Footer -->
 
-    <div class="credit">
-      <p class=" animate__animated animate__fadeInUp">Created &nbsp;by <span style="color: var(--text-color);"> &nbsp;Ms. Web Designer </span>&nbsp;| &nbsp;All &nbsp;Rights &nbsp;Reserved</p>
-    </div>
+  <div class="credit">
+    <p class=" animate__animated animate__fadeInUp">Created &nbsp;by <span style="color: var(--text-color);"> &nbsp;Ms.
+        Web Designer </span>&nbsp;| &nbsp;All &nbsp;Rights &nbsp;Reserved</p>
+  </div>
 
   <!-- Scroll Button -->
 

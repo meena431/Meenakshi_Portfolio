@@ -370,6 +370,42 @@ button:hover a {
 
 /*------------ About Section ------------*/
 
+.glow-theme {
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--background-color);
+}
+
+.glow-theme::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  z-index: -1;
+
+  background: radial-gradient(circle,
+      rgba(30, 190, 211, 0.9) 0%,
+      rgba(30, 190, 211, 0.6) 40%,
+      rgba(30, 190, 211, 0.3) 65%,
+      rgba(30, 190, 211, 0.1) 80%,
+      transparent 100%);
+
+  filter: blur(8px);
+}
+
+.glow-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(30, 190, 211, 0.8);
+  box-shadow:
+    0 0 8px rgba(30, 190, 211, 0.8),
+    0 0 15px rgba(30, 190, 211, 0.5);
+}
+
 @media(max-width: 580px) {
   .lead {
     font-size: 1.2rem !important;
@@ -696,7 +732,7 @@ button:hover a {
   position: absolute;
   left: 14px;
   top: 14px;
-  color:var(--text-color);
+  color: var(--text-color);
   transition: 0.3s ease;
 }
 
@@ -711,7 +747,7 @@ button:hover a {
 
 .send-btn {
   width: 100%;
-  padding: 14px;
+  padding: 11px;
   border: none;
   font-weight: 600;
   font-size: 17px;
@@ -767,7 +803,8 @@ button:hover a {
     grid-template-columns: 1fr;
   }
 
-  .contact-left h2, .contact-left p{
+  .contact-left h2,
+  .contact-left p {
     text-align: center;
   }
 
