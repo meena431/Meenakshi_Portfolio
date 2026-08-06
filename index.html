@@ -18,6 +18,25 @@
 </head>
 
 <body>
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <clipPath id="roundedHex" clipPathUnits="objectBoundingBox" transform="scale(0.01)">
+        <path d="M45.8,3
+               Q50,0 54.2,3
+               L88.14,23
+               Q92.3,25.5 92.3,30
+               L92.3,70
+               Q92.3,74.5 88.14,77
+               L54.2,97
+               Q50,100 45.8,97
+               L11.86,77
+               Q7.7,74.5 7.7,70
+               L7.7,30
+               Q7.7,25.5 11.86,23
+               L45.8,3 Z" />
+      </clipPath>
+    </defs>
+  </svg>
 
   <!--------- HEADER -------->
 
@@ -50,21 +69,22 @@
   </nav>
 
   <!-- ========= HOME SECTION ========= -->
-  <section class="container-fluid home py-5 my-lg-5" id="home">
+  <section class="container-fluid home py-4 my-lg-5" id="home">
     <div class="row d-flex flex-lg-row flex-column align-items-center justify-content-center m-0 gap-lg-5 gap-4">
 
       <!-- Image -->
-      <div
-        class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center order-lg-1 order-2 animate__animated animate__zoomIn animate__slow">
-        <img src="images/meena1.png" alt="Meena" class="img-fluid rounded-circle"
-          style="height: 350px; width: 350px; object-fit: cover;">
+      <div class="hero-photo-glow-container mt-3">
+        <div
+          class="hero-photo-wrapper col-12 col-md-6 col-lg-2 d-flex align-items-center justify-content-center order-lg-1 order-2 animate__animated animate__zoomIn animate__slow">
+          <img src="images/meena1.png" alt="Meena" class="hero-photo">
+        </div>
       </div>
 
       <!-- Text -->
       <div
-        class="col-12 col-md-10 col-lg-5 d-flex flex-column align-items-start justify-content-center py-5 gap-2 order-lg-2 order-1">
+        class="col-12 col-md-10 col-lg-6 d-flex flex-column align-items-start justify-content-center py-5 gap-2 order-lg-2 order-1 ms-lg-2">
 
-        <h5 class="animate__animated animate__fadeInDown animate__slow">Hi, Myself</h5>
+        <h5 class="animate__animated animate__fadeInDown animate__slow">Hi, I'm</h5>
         <h2 class="animate__animated animate__fadeInDown animate__slow">
           Meenakshi Thangadurai
         </h2>
@@ -86,7 +106,7 @@
 
         <!-- Resume Button -->
         <button class="mt-4 animate__animated animate__zoomIn">
-          <a href="resume.pdf" download="Meenakshi_Resume.pdf" class="text-decoration-none text-dark">
+          <a href="resume.docx" download="Meenakshi_Resume.docx" class="text-decoration-none text-dark">
             Download Resume
           </a>
         </button>
@@ -98,11 +118,11 @@
 
 
   <!-- ========= ABOUT SECTION ========= -->
-  <section class="container-fluid about py-lg-5 pb-5 my-lg-3" id="about">
-    <div class="row d-flex flex-lg-row flex-column-reverse gap-4 align-items-center justify-content-center">
+  <section class="container-fluid about py-lg-4 pb-5 my-lg-3" id="about">
+    <div class="row d-flex flex-lg-row flex-column-reverse gap-lg-5 gap-5 align-items-center justify-content-center">
 
       <!-- Text -->
-      <div class="col-11 col-md-8 col-lg-5 order-lg-1 order-2">
+      <div class="col-11 col-md-8 col-lg-6 order-lg-1 order-2 me-lg-2">
 
         <h2 class="mb-3 animate__animated animate__fadeInDown title">
           <span style="color: var(--primary-color);">About</span> Me
@@ -127,10 +147,10 @@
       </div>
 
       <!-- Image -->
-      <div class="col-12 col-md-6 col-lg-4 text-center order-lg-2 order-1">
+      <div class="col-10 col-md-6 col-lg-3 text-center order-lg-2 order-1 mt-3">
         <div class="img-wrap glow-theme animate__animated animate__zoomIn animate__slow">
           <img src="images/meena2.jpeg" alt="Meenakshi - MERN Developer" class="img-fluid rounded-circle"
-            style="height: 310px; width: 310px; object-fit: cover;">
+            style="height: 270px; width: 270px; object-fit: cover;">
         </div>
       </div>
     </div>
@@ -276,8 +296,8 @@
         <img src="images/project1.jpg" alt="">
         <div class="layer">
           <h3>Portfolio Website</h3>
-          <p>Developed a personal portfolio using HTML and CSS with a clean, responsive layout showcasing my skills,
-            projects, and professional profile.</p>
+          <p>Developed a personal portfolio using HTML and CSS with a clean, responsive layout showcasing my
+            skills,projects, and professional profile.</p>
           <a href="https://meena431.github.io/Portfolio/"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
@@ -302,6 +322,17 @@
           <p>Designed and developed a responsive e-commerce platform using React.js with reusable components, product
             filters, and wishlist functionality.</p>
           <a href="https://elora-rust.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Project -4 -->
+      <div class="p-box" style="--i:3">
+        <img src="images/project4.png" alt="">
+        <div class="layer">
+          <h3>Quiz App</h3>
+          <p>An interactive Quiz App with responsive design and real-time scoring. 
+            Delivering a smooth, engaging, and user-friendly learning experience.</p>
+          <a href="https://quiz-app-kohl-nine.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
 
