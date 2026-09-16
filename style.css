@@ -11,6 +11,8 @@
   --primary-color: #1ebed3;
   --text-color: #E4E4F3;
   --shadow-color: rgba(23, 30, 84, 0.5);
+  --navbar-bg: #0a0e27;
+  --navbar-text: #ffffff;
 }
 
 /*  LIGHT MODE  */
@@ -19,6 +21,8 @@ html.light {
   --background-color: #fafcff;
   --text-color: #050518;
   --shadow-color: rgba(219, 222, 245, 0.5);
+  --navbar-bg: #ffffff;
+  --navbar-text: #0a0e27;
 }
 
 .contact-section {
@@ -129,12 +133,13 @@ button:hover a {
   position: fixed;
   top: 0;
 
-  background: rgba(10, 10, 42, 0.45);
+  background-color: var(--navbar-bg);   
+  color: var(--navbar-text);            
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 10px 20px var(--shadow-color);
   z-index: 1099;
-  min-height: 15vh;
+  min-height: 14vh;
   padding: 0;
   box-sizing: border-box;
 }
