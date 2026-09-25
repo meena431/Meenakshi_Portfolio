@@ -314,8 +314,8 @@ button:hover a {
 @media(max-width:480px) {
 
   .navbar {
-    min-height: 10vh;
-    border-bottom: #fff 5px;
+    min-height: 14vh !important;
+    border: 2px solid white;
   }
 
   .nav-container {
