@@ -313,11 +313,6 @@ button:hover a {
 
 @media(max-width:480px) {
 
-  .navbar {
-    min-height: 14vh !important;
-    border: 2px solid white;
-  }
-
   .nav-container {
     padding: 2px 1rem;
   }
