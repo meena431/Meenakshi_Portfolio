@@ -267,10 +267,6 @@ button:hover a {
     height: 28px !important;
   }
 
-  /* .navbar {
-    backdrop-filter: none;
-  } */
-
   .nav-container {
     padding: 0 1.7rem !important;
   }
@@ -280,23 +276,15 @@ button:hover a {
     flex-direction: column;
 
     position: fixed;
-    top: 60px;          /* below navbar */
+    top: 60px;          
     right: 0;
-
     width: 260px;
     height: calc(100vh - 60px);
-
     padding: 2rem 1.5rem;
-
     background: rgba(10,10,42,.96);
-
     backdrop-filter: none;
-
     border-left: 1px solid rgba(30,190,211,.15);
-
-    box-shadow:
-        -8px 0 25px rgba(0,0,0,.35);
-
+    box-shadow:-8px 0 25px rgba(0,0,0,.35);
     z-index:999;
 }
 
@@ -368,45 +356,33 @@ button:hover a {
 
 .hero-photo-glow-container {
   position: relative;
-  width: 340px;
-  height: 320px;
+  width: clamp(220px, 70vw, 340px);
+  height: clamp(210px, 66vw, 320px);
   display: flex;
   justify-content: center;
   align-items: center;
-
   animation: floatImage 4s ease-in-out infinite;
 }
 
 .hero-photo-glow-container::before {
   content: "";
   position: absolute;
-  width: 360px;
-  height: 360px;
+  width: 106%;
+  height: 106%;
   border-radius: 50%;
-
-  background: conic-gradient(
-      transparent,
-      transparent,
-      var(--primary-color),
-      transparent,
-      transparent
+  background: conic-gradient(transparent, transparent, var(--primary-color), transparent, transparent
   );
-
   filter: blur(18px);
   animation: rotateGlow 6s linear infinite;
-
   z-index: 0;
 }
-
 .hero-photo-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 6px;
   background: var(--primary-color);
-
   clip-path: url(#roundedHex);
-
   z-index: 2;
 }
 
@@ -414,9 +390,7 @@ button:hover a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   clip-path: url(#roundedHex);
-
   filter:
       drop-shadow(0 0 10px rgba(30,190,211,.9))
       drop-shadow(0 0 25px rgba(30,190,211,.7))
