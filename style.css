@@ -274,7 +274,6 @@ button:hover a {
   .nav-container .nav-menu{
     display: none;
     flex-direction: column;
-
     position: fixed;
     top: 60px;          
     right: 0;
@@ -423,18 +422,6 @@ button:hover a {
 @media(max-width: 880px) {
   .home {
     margin-top: 3rem !important;
-  }
-}
-
-@media(max-width: 450px) {
-  .home img {
-    width: 300px !important;
-    height: 300px !important;
-  }
-
-  .about img {
-    width: 300px !important;
-    height: 300px !important;
   }
 }
 
